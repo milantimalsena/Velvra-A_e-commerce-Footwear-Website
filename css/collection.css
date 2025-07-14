@@ -1,0 +1,252 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #333;
+  line-height: 1.6;
+ 
+}
+
+
+
+
+
+/* Background Video Section */
+.backgroundtop {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundtop video {
+  position: absolute;
+  
+  width: 100%;
+  height: 80vh;
+  object-fit: fill;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+/* thulo container*/
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* sabai item  */
+.item {
+  background: #161616;
+  
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.item:hover {
+  transform: scale(1.03);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.item:hover {
+  border: wheat;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform: scale(1.05);
+  cursor: pointer;
+ 
+}
+
+.item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+
+}
+.item h4 {
+  font-size: 1.2rem;
+  margin: 1rem 1rem 0.5rem;
+  color: #f97316;
+}
+
+
+.item h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2rem;
+  margin: 1rem 1rem 0.5rem;
+  color: #f7eeee;
+}
+
+
+.item p {
+  font-size: 0.95rem;
+  margin: 0 1rem 1rem;
+  color: #666;
+}
+
+
+.item h4:hover {
+  color: #0741e2;
+  cursor: pointer;
+}
+
+/* === Buttons and Select === */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: start;
+  width: 100%;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem;
+  height: 10%;
+}
+.button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 15px;
+  align-items: center;
+  margin: 6px;
+  padding: 10px;
+ 
+
+  width: 70%;
+  height:10%;
+}
+/*buy button lai rang laideko*/
+
+.buy{
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  
+  background-color: #288bb9;
+  border: 0.5px solid #ccc;
+  border-radius: 6px;
+
+  cursor: pointer;
+ width: 98px;
+ height: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #e4e8ec;
+  
+}
+
+
+
+.buy:hover {
+  background-color: #442007;
+}
+
+/*cart wala button lai rang laideko*/
+
+.crt {
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  background-color: #288bb9;
+
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+ margin: 6px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 110px;
+  height: 40px;
+  
+}
+
+
+
+
+.crt:hover {
+  background-color: #442007;
+}
+
+
+  #size {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #288bb9;
+    
+    font-weight: 500;
+    color: #e4e8ec;
+    cursor: pointer;
+
+  
+    
+    position: relative;
+  }
+  
+  #size:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  #size:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+
+.size:hover {
+  border-color: #007bff;
+}
+
+
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.checked {
+  
+  color: orange;
+}
+.checked:hover {
+  color: #ffcc00;
+}
+
+.fa-star {
+  
+  font-size: 20px;
+  margin-right: 5px;
+}
+.fa-star :hover{
+  color: #ffcc00;
+}
+
+.fa :hover{
+  color: #ffcc00;
+}
+a{
+  text-decoration: none;
+}

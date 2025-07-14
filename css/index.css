@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+
+
+/* Hero Section */
+.hero {
+  
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+.background-clip{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 10%;
+    bottom: 0;
+    object-fit:cover;
+    z-index: -1;
+    height:auto;
+
+    
+
+}
+
+@media(min-aspect-ratio: 16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+     
+    }
+
+
+
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+    
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.shop-now {
+  
+    background-color: #f97316;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.shop-now:hover{
+    background-color: rgb(180, 154, 122);
+    color: #8d0f0f;
+}
+
+/* Product Section Styles */
+.products, .bestsellings, .arrivals {
+    padding: 40px 20px;
+    background: #161616;
+}
+
+.products h2, .bestsellings h2, .arrivals h2 {
+    color: #f97316;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-grid, .arrival-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.product, .sellings, .arrival {
+    background: #242424;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover, .sellings:hover, .arrival:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product h3, .sellings h3, .arrival h3 {
+    color: #147fb1;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product p, .sellings p, .arrival p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.buy, .addtocart {
+    background: #288bb9;
+    color: #000;
+    padding: 10px 20px;
+
+   
+    border-radius: 6px;
+  
+    font-size: 1rem;    
+    
+    transition: background 0.3s ease, color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+.buy{
+    margin-right: 30px;
+}
+.addtocart{
+    margin-left: 30px;
+}
+
+.buy:hover, .addtocart:hover {
+    background: #ffa726;
+    color: #000;
+}
+
+.promotion{
+    height: 99vh;
+    margin-top: 40px;
+    background: url('../images/promotion\ cover.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+.promotion-content {
+    margin-top: 31%;
+    margin-right: 17%;
+   
+    padding: 20px;
+    border-radius: 10px;
+  
+}
+.promotion h1 {
+    font-size: 50px;
+    margin: 0;
+    
+}
+.promotion p {
+    font-size: 18px;
+    margin: 10px 0;
+
+    
+  }
+
