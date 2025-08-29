@@ -1,4 +1,4 @@
-# Velvra-A: E-commerce Footwear Website
+# Velvra A E-commerce Footwear Website
 
 ## 🛍️ Overview
 **Velvra-A** is a modern, responsive e-commerce website designed for browsing and purchasing footwear.  
